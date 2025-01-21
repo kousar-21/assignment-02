@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* Dark-00 */
+.dark-0{
+    color: #000000;
+}
+
+/* Dark-1 */
+.dark-1{
+   color: #111111; 
+}
+
+/* dark-paragraph */
+.dark-p{
+    color: #808080;
+}
+
+/* dark card heading */
+.dark-card-h{
+    color: #202020;
+}
+
+/* orange color */
+.orange{
+    color: #FEA301;
+}
+
+
+/* navbar related style */
+
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 140px;
+}
+
+/* .humberger{
+    height: 30px;
+    width: 30px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+} */
+.navbar-ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.navbar-img{
+    margin-right: 11px;
+}
+
+.navbar-school{
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.nav-a{
+    font-weight: 600;
+    font-size: 20px;
+}
+#home{
+    color: #FEA301;
+}
+#about{
+    color: #01ACFD;
+}
+#facilities{
+    color: #5D58EF;
+}
+#admission{
+    color: brown;
+}
+
+.navbar-btn{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    padding: 10px 60px;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+}
+
+/* Banner related styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 140px 60px 140px;
+    gap: 50px;
+}
+
+.banner-heading{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+
+}
+
+.banner-empower{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.banner-vision{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #01ACFD;
+}
+
+.banner-para{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-enroll{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    background-color: #111111;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 45px;
+    margin-top: 0;
+}
+
+.banner-img{
+    height: 100%;
+}
+
+header hr{
+    height: 2px;
+    width: 100%;
+    display: none;
+}
+
+/* Media Query for header */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    /* .humberger span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+    } */
+
+    .navbar-ul{
+        display: none;
+    }
+    .banner-img-div{
+        margin: 20px 10px 5px 10px;
+    }
+    .banner-heading{
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+    .banner-para{
+        margin-bottom: 18px;
+    }
+
+    header hr{
+        display: block;
+        width: 100%;
+        background-color: #FEA301;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0 1rem;
+    }
+    .banner-img{
+        width: 100%;
+        
+    }
+    .banner-media{
+        justify-items: center;
+        margin-top: 0;
+    }
+}
