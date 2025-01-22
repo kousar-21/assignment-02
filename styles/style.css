@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+.mark-q{
+    white-space: nowrap;
+    border: 1px solid black;
+}
+.mark-q span{
+    display: inline-block;
+    padding-left: 100%;
+    animation: mark-q 20s linear infinite;
+}
+@keyframes mark-q {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* shared styles */
 .display-flex{
     display: flex;
