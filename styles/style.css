@@ -57,6 +57,7 @@
 
 .back-img{
     background-image: url(../assets/bg.png);
+    background-size: cover;
 }
 /* Button standard */
 .btn-read{
@@ -300,6 +301,112 @@ header hr{
     width: 100%;
 }
 
+
+/* OUR STORIES RELATED STYLES */
+
+.our-story{
+    justify-items: center;
+    background-image: linear-gradient(to top, rgba(255, 213, 138, 1) 0%, rgba(255, 255, 255, 1) 100%,url(../assets/bg.png));
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.story-img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.story-bg{
+    background-color: bisque;
+    margin-top: 0;
+}
+
+.story-2{
+    border-radius: 10px;
+}
+.story-img-2{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.story-img-div{
+    display: flex;
+    gap: 20px;
+    padding: 5rem 8.75rem;
+    
+    
+}
+.story-part-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+
+.story-title{
+    font-size: 3rem;
+}
+
+.story-head{
+    font-size: 1.5rem;
+}
+.head-1{
+    padding: 3.5rem 2.5rem 3rem 2.5rem;
+}
+.head-2{
+    padding: 2rem 2rem 1.75rem 2rem;
+}
+.story-para{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+    padding: 0 2rem 1.5rem 2.5rem;
+    
+}
+.btn-story{
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+.btn-story-1{
+    background-color: #3CD8E8;
+}
+.btn-story-2{
+    background-color: #95B226;
+}
+.btn-story-3{
+    background-color: #5D58F0;
+}
+.btn-over{
+    position: relative;
+    top: -335px;
+    right: -50px;
+}
+.btn-over-2{
+   position: relative;
+   top: -220px;
+   right: -50px;
+   
+    /* -220 -50 */
+}
+.btn-over-3{
+    position: relative;
+    top: -250px;
+    right: -50px;
+}
+.btn-view{
+    margin-bottom: 60px;
+}
+
+
+
 /* Body related media query */
 
 @media  screen and (max-width:576px) {
@@ -318,12 +425,99 @@ header hr{
     }
 
     .kinder-part, .elementary-part, .middle-part{
-        margin-bottom: 1rem;
-        
-        
+        margin-bottom: 1rem;    
     }
     .forward-backward{
         display: none;
     }
-    
+
+    #first-story{
+        display: none;
+    }
+    .story-part-2{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .story-part-2 div{
+        width: calc(100% - 10px);
+    }
+    .our-story{
+        margin: 1.25rem 1.75rem 1.25rem 1.75rem;
+        width: 100%;
+        justify-items: center;
+        
+    }
+    .story-img-div{
+        padding: 1.25rem 2.25rem;
+        
+    }
+    .btn-story{
+        width: 60%;
+        font-size: 0.55rem;
+    }
+    .btn-over-2{
+        position: relative;
+        top: -250px;
+        right: -50px;
+    }
+    #btn-3-4{
+        position: relative;
+        top: -280px;
+        right: -50px;
+    }
+    #second-story, #first-story{
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+}
+
+
+
+/* FOOTER RELATED STYLES */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #01ACFD;
+    padding: 120px 200px 170px 140px;
+}
+
+.footer-logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.logo-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 10px;
+}
+.about-school{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: white;
+}
+.keep-touch{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-shared{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.btn-foot{
+    border: none;
+}
+
+.footer-part-1{
+    margin-right: 170px;
+    width: 40%;
+}
+.footer-part-2{
+    margin-right: 140px;
 }
